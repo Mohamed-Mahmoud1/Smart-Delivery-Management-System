@@ -6,25 +6,12 @@ namespace Smart_Delivery_Management_System
 {
     public struct Shipment
     {
+
         /*
-         
-   2.Add constructor overloading to Shipment:
-   -The first constructor receives only trackingCode.
-   -The first constructor uses default values: Description = "Unknown", Weight = 1, DeliveryFee = 50, and a default destination.
-   -The second constructor receives trackingCode, description, weight, deliveryFee, and destination.
-   -Each constructor must initialize the object with valid data.
-        
-    public Shipment(string trackingCode)
-    {
-     Initialize the shipment using default values.
-    }
-
-    public Shipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
-    {
-     Initialize the shipment using the provided values.
-    }
-        */
-
+         3.Add the following methods to Shipment:
+	    -UpdateDeliveryFee(decimal newFee): updates the fee only when newFee is greater than 0.
+	    -PrintShipment(): prints all shipment information, including the estimated cost.
+         */
 
         string _TackingCode;
         string _Description;
@@ -115,8 +102,23 @@ namespace Smart_Delivery_Management_System
                 $"\n-------------------------------------------------";
         }
 
-   
+        public void UpdateDeliveryFee(decimal newFee)
+        {
+            if (newFee > 0)
+                DeliveryFee = (double)newFee;
+             
+        }
 
+        public void PrintShipment()
+        {
+            Console.WriteLine($"Tracking Code: {TrackingCode}");
+            Console.WriteLine($"Description: {Description}");
+            Console.WriteLine($"Weight: {Weight}");
+            Console.WriteLine($"Delivery Fee: {DeliveryFee}");
+            Console.WriteLine($"Estimated Cost: {EstimatedCost}");
+            Console.WriteLine($"Destination: {Destination.City}, {Destination.Street}, {Destination.Building_Number}");
+            Console.WriteLine("-------------------------------------------------");
+        }
 
     }
 

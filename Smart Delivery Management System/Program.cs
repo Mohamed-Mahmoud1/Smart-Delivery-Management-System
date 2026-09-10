@@ -80,6 +80,12 @@ namespace Smart_Delivery_Management_System
             //Console.WriteLine(shipment_obj02);
             #endregion
 
+            #region 3.Add the following methods to Shipment
+            //Shipment shipment_obj01 = new Shipment("TestForTrackCode");
+            //shipment_obj01.UpdateDeliveryFee(2000);
+            //shipment_obj01.PrintShipment();
+            #endregion
+
             #endregion
 
         }
