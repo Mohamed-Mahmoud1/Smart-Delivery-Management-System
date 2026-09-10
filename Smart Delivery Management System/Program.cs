@@ -1,4 +1,6 @@
-﻿namespace Smart_Delivery_Management_System
+﻿using System.Data.SqlTypes;
+
+namespace Smart_Delivery_Management_System
 {
     internal class Program
     {
