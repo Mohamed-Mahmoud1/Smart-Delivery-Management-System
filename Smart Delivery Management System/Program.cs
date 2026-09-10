@@ -45,6 +45,32 @@
             #endregion
 
             #endregion
+
+            #region Part 02 : Practical
+
+            #region 1.Create a DeliveryAddress struct
+            /*Create one DeliveryAddress value, 
+             * copy it into a second variable, 
+             * modify the copy, and print both values to prove that the original did not change.
+             */
+
+
+            //DeliveryAddress delivery_Address1 = new DeliveryAddress("New York", "5th Avenue", 123);
+            //DeliveryAddress delivery_Address2 = new DeliveryAddress();
+            //delivery_Address2 = delivery_Address1;
+
+            //delivery_Address2.City = "Los Angeles";
+            //delivery_Address2.Street = "Sunset Boulevard";
+            //delivery_Address2.Building_Number = 456;
+
+            //delivery_Address1.GetFullAddress();
+            //delivery_Address2.GetFullAddress();
+
+
+            #endregion
+
+            #endregion
+
         }
     }
 }
