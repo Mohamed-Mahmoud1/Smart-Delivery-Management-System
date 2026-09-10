@@ -8,36 +8,46 @@ namespace Smart_Delivery_Management_System
     {
         /*
          
-    the struct should contain the following private fields:
-        -TrackingCode
-        -Description
-        -Weight
-        -DeliveryFee
+   2.Add constructor overloading to Shipment:
+   -The first constructor receives only trackingCode.
+   -The first constructor uses default values: Description = "Unknown", Weight = 1, DeliveryFee = 50, and a default destination.
+   -The second constructor receives trackingCode, description, weight, deliveryFee, and destination.
+   -Each constructor must initialize the object with valid data.
+        
+    public Shipment(string trackingCode)
+    {
+     Initialize the shipment using default values.
+    }
 
-        It should also contain a public property:
-        -Destination (DeliveryAddress)
-
-    Apply proper encapsulation using public properties with the following validation rules:
-	    -TrackingCode cannot be null, empty, or whitespace.
-	    -Description cannot be null, empty, or whitespace.
-	    -Weight must be greater than 0.
-	    -DeliveryFee must be greater than 0.
-	    If an invalid value is assigned, keep the previous valid value.
-
-    Add the following properties:
-	    -TrackingCode: read-only from outside the struct.
-	    -Description: read/write property with validation.
-	    -Weight: read/write property with validation.
-	    -DeliveryFee: public getter and private setter.
-	    -Destination: public read/write property.
-	    -EstimatedCost: a calculated property that returns: DeliveryFee + (Weight × 5)
-        -The EstimatedCost value must be calculated when requested and must not be stored in a separate field 
-
+    public Shipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
+    {
+     Initialize the shipment using the provided values.
+    }
         */
+
+
         string _TackingCode;
         string _Description;
         double _Weight;
         double _DeliveryFee;
+        public Shipment(string trackingCode)
+        {
+           TrackingCode = trackingCode;
+           Description = "Unknown";
+           Weight = 1;
+           DeliveryFee=50;
+           Destination = default;
+        }
+
+        public Shipment(string tackingCode, string description, double weight, double deliveryFee,DeliveryAddress destination) : this()
+        {
+            _TackingCode = tackingCode;
+            _Description = description;
+            _Weight = weight;
+            _DeliveryFee = deliveryFee;
+            Destination = destination;
+        }
+
         public string TrackingCode
         {
             get
@@ -92,6 +102,18 @@ namespace Smart_Delivery_Management_System
 
         public double EstimatedCost => DeliveryFee + (Weight * 5);
         public DeliveryAddress Destination { get; set; }
+
+        public override string ToString()
+        {
+            return 
+                $"Tracking Code: {TrackingCode}\n" +
+                $"Description: {Description}\n" +
+                $"Weight: {Weight}\n" +
+                $"Delivery Fee: {DeliveryFee}\n" +
+                $"Estimated Cost: {EstimatedCost}\n" +
+                $"Destination: {Destination.City}, {Destination.Street}, {Destination.Building_Number}" +
+                $"\n-------------------------------------------------";
+        }
 
    
 

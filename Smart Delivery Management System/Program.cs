@@ -71,6 +71,15 @@ namespace Smart_Delivery_Management_System
 
             #endregion
 
+            #region 2.Add constructor overloading to Shipment:
+            //Shipment shipment_obj01 = new Shipment("TestForTrackCode");
+            //Console.WriteLine(shipment_obj01);
+
+            //DeliveryAddress delivery_address_obj = new DeliveryAddress("TestForCity", "TestForStreet", 123);
+            //Shipment shipment_obj02 = new Shipment("TestForTrackCode", "TestForDescription",80,100,delivery_address_obj);
+            //Console.WriteLine(shipment_obj02);
+            #endregion
+
             #endregion
 
         }
