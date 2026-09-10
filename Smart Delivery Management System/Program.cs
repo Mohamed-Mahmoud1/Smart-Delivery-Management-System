@@ -27,6 +27,23 @@
 
             #endregion
 
+            #region Question02
+            //public struct Shipment
+            //{
+            //public string Description;
+            //public double Weight;
+            //public decimal DeliveryFee;
+            //}
+
+            //a) Identify at least three problems with this design from an encapsulation perspective.
+            //Answer:
+            //1.Direct access to fields: The fields of the Shipment struct are public, which allows direct access and modification from outside the struct.
+            //2.Lack of validation: There is no validation logic in place to ensure that the values assigned to the fields are valid.
+
+            //b)How can private fields and public properties improve this design?
+            //Answer: By using private fields and public properties, we can encapsulate the data and provide controlled access to it.
+            #endregion
+
             #endregion
         }
     }
