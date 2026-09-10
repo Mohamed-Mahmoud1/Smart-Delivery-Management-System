@@ -86,6 +86,23 @@ namespace Smart_Delivery_Management_System
             //shipment_obj01.PrintShipment();
             #endregion
 
+            #region 5.Create a DeliveryCenter struct
+            //DeliveryCenter delivery_Center_obj = new DeliveryCenter();
+
+            //DeliveryAddress delivery_address_obj01 = new DeliveryAddress("FirstCity", "FirstStreet", 1);
+            //Shipment shipment_obj01 = new Shipment("FirstTrackCode", "FirstDescription", 1000,1000,delivery_address_obj01);
+
+            //DeliveryAddress delivery_address_obj02 = new DeliveryAddress("SecondCity", "SecondStreet", 2);
+            //Shipment shipment_obj02 = new Shipment("SecondTrackCode", "SecondDescription", 2000, 2000, delivery_address_obj02);
+
+            //delivery_Center_obj.AddShipment(shipment_obj01);
+            //delivery_Center_obj.AddShipment(shipment_obj02);
+
+            //Console.WriteLine(delivery_Center_obj[0]);
+            //Console.WriteLine(delivery_Center_obj["SecondTrackCode"]);
+
+            #endregion
+
             #endregion
 
         }
