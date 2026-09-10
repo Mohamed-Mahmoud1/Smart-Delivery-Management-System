@@ -103,6 +103,45 @@ namespace Smart_Delivery_Management_System
 
             #endregion
 
+            #region 6. In Main, build a Console Application that does the following:
+            //a.Create a DeliveryCenter.
+            //b.Read data for three shipments from the user.
+            //c.Create each Shipment and add it to the DeliveryCenter
+            //d. Print the three shipments using the integer indexer.
+            //e. Ask the user to enter a tracking code.
+            //f. Search for the shipment using the string indexer
+            //g.Print the shipment if found; otherwise print:Shipment not found.
+
+
+            //DeliveryCenter delivery_Center_obj = new DeliveryCenter();
+
+            //DeliveryAddress delivery_address_obj01 = new DeliveryAddress("FirstCity", "FirstStreet", 1);
+            //Shipment shipment_obj01 = new Shipment("FirstTrackCode", "FirstDescription", 1000, 1000, delivery_address_obj01);
+
+            //DeliveryAddress delivery_address_obj02 = new DeliveryAddress("SecondCity", "SecondStreet", 2);
+            //Shipment shipment_obj02 = new Shipment("SecondTrackCode", "SecondDescription", 2000, 2000, delivery_address_obj02);
+
+            //DeliveryAddress delivery_address_obj03 = new DeliveryAddress("ThirdCity", "ThirdStreet", 3);
+            //Shipment shipment_obj03 = new Shipment("ThirdTrackCode", "ThirdDescription", 3000, 3000, delivery_address_obj03);
+
+            //delivery_Center_obj.AddShipment(shipment_obj01);
+            //delivery_Center_obj.AddShipment(shipment_obj02);
+            //delivery_Center_obj.AddShipment(shipment_obj03);
+
+            //Console.WriteLine(delivery_Center_obj[0]);
+            //Console.WriteLine(delivery_Center_obj[1]);
+            //Console.WriteLine(delivery_Center_obj[2]);
+
+            //Console.Write("Enter Tracking Code:");
+            //string tracking = Console.ReadLine();
+
+            //if (delivery_Center_obj[tracking].TrackingCode != null)
+            //    Console.WriteLine($"\n{delivery_Center_obj[tracking]}");
+            //else
+            //    Console.WriteLine("Shipment not found");
+
+            #endregion
+
             #endregion
 
         }
